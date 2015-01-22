@@ -1,0 +1,55 @@
+.form-item label, .form-item input {
+    display: block;
+}
+.form-item label {
+    position: relative;
+    color: black;
+    top: 0;
+    left: 0;
+    background: none;
+    pointer-events: none;
+
+    -webkit-transform-origin: none;
+    -ms-transform-origin: none;
+    transform-origin: none;
+
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.form-item.data label, .form-item.focus label {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.form-item label, .form-item input {
+    display: inline-block;
+    transition: all 75ms;
+}
+
+.form-item label {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #999999;
+    background: inherit;
+    pointer-events: none;
+
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+
+    -webkit-transform: translateY(0) scale(1);
+    -ms-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+}
+
+.form-item.data label, .form-item.focus label {
+    color: #1c3e63;
+    background: #fff;
+    -webkit-transform: translateY(-20px) scale(0.75);
+    -ms-transform: translateY(-20px) scale(0.75);
+    transform: translateY(-20px) scale(0.75);
+}
